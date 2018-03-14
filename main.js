@@ -52,5 +52,32 @@ requirejs([
 	file,
 	Snip	
 ) {
-	console.log("Main intialized successfully!");
+	console.log("Main initialized successfully!");
+
+	//*
+        var xSnip = new Snip({
+                "Dir": "/home/josh/login/Snippets/",
+                "Snippets": {
+                        "testsuite":"testsuite.txt",
+                        "function":"function.txt"
+                }
+        });
+
+        var sTemplateType = "testsuite";
+        var sFileName = "/home/josh/login/Functions/tests/test_bValidateIdentityKey.js";
+
+        xSnip.snip( sTemplateType ).then(function( Template ) {
+                file.create({
+                        "Name": sFileName,
+                        "Body": Template
+                }).then(function() {
+                        console.log("Done.");
+                }).catch(function( Error ) {
+                        console.log( "File error: " + Error );
+                });
+        }).catch(function( Error ) {
+                console.log("Snip error: " + JSON.stringify( Error ));
+        });
+        //*/
+
 });
