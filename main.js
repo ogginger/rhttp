@@ -13,7 +13,9 @@ requirejs.config({
 	},
         bundles: {
 		"lib/snip.min": [ "Snip" ],
-		"lib/file.min": [ "file" ]
+		"lib/file.min": [ "file" ],
+                "lib/testsuite.min": [ "TestSuite" ],
+                "lib/promise.min": [ "promise" ]
 	},
 	shim: {
 		"underscore": {
@@ -41,7 +43,14 @@ requirejs.config({
 				"backbone"
 			],
 			exports: "Snip"
-		}
+		},
+		"promise": {
+                        deps: [
+                                "rsvp"
+                        ],
+                        exports: "promise"
+                }
+
 	}
 });
 
@@ -56,15 +65,15 @@ requirejs([
 
 	//*
         var xSnip = new Snip({
-                "Dir": "/home/josh/login/Snippets/",
+                "Dir": "~/*PROJECT_NAME*/Snippets/",
                 "Snippets": {
                         "testsuite":"testsuite.txt",
                         "function":"function.txt"
                 }
         });
 
-        var sTemplateType = "testsuite";
-        var sFileName = "/home/josh/login/Functions/tests/test_bValidateIdentityKey.js";
+        var sTemplateType = "Snippet Type";
+        var sFileName = "~/*PROJECT_NAME*/Functions/tests/test_MethodUnderTest.js";
 
         xSnip.snip( sTemplateType ).then(function( Template ) {
                 file.create({
