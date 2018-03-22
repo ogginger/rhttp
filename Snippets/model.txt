@@ -4,14 +4,14 @@ define([
         "jquery",
         "underscore",
         "backbone",
-        "Functions/log
+        "Functions/log"
 ], function(
         $,
         _,
         Backbone,
         log
 ) {
-        return new Backbone.Model.extend({
+        return Backbone.Model.extend({
                 "initialize": function() {
 			log("model initialized successfully!");
                 },
