@@ -5,17 +5,17 @@ var requirejs = require("requirejs");
 
 requirejs.config({
         nodeRequire: require,
-        baseUrl: ".",
+        baseUrl: "/*Project*/",
         paths: {
-		"rsvp": "lib/rsvp.min",
-		"backbone": "lib/backbone.min",
-		"underscore": "lib/underscore.min"
+		"../rsvp": "lib/rsvp.min",
+		"../backbone": "lib/backbone.min",
+		"../underscore": "lib/underscore.min"
 	},
         bundles: {
-		"lib/snip.min": [ "Snip" ],
-		"lib/file.min": [ "file" ],
-                "lib/testsuite.min": [ "TestSuite" ],
-                "lib/promise.min": [ "promise" ]
+		"../lib/snip.min": [ "Snip" ],
+		"../lib/file.min": [ "file" ],
+                "../lib/testsuite.min": [ "TestSuite" ],
+                "../lib/promise.min": [ "promise" ]
 	},
 	shim: {
 		"underscore": {
@@ -65,7 +65,7 @@ requirejs([
 
 	/*
         var xSnip = new Snip({
-                "Dir": "~/PROJECT_NAME/Snippets/",
+                "Dir": "~/PROJECT_DIR/Snippets/",
                 "Snippets": {
                         "testsuite":"testsuite.txt",
                         "function":"function.txt"
@@ -73,7 +73,7 @@ requirejs([
         });
 
         var sTemplateType = "Snippet Type";
-        var sFileName = "~/PROJECT_NAME/Functions/tests/test_MethodUnderTest.js";
+        var sFileName = "~/PROJECT_DIR/Functions/tests/test_MethodUnderTest.js";
 
         xSnip.snip( sTemplateType ).then(function( Template ) {
                 file.create({
