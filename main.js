@@ -7,9 +7,9 @@ requirejs.config({
         nodeRequire: require,
         baseUrl: "/*Project*/",
         paths: {
-		"../rsvp": "lib/rsvp.min",
-		"../backbone": "lib/backbone.min",
-		"../underscore": "lib/underscore.min"
+		"rsvp": "../lib/rsvp.min",
+		"backbone": "../lib/backbone.min",
+		"underscore": "../lib/underscore.min"
 	},
         bundles: {
 		"../lib/snip.min": [ "Snip" ],
@@ -65,7 +65,7 @@ requirejs([
 
 	/*
         var xSnip = new Snip({
-                "Dir": "~/PROJECT_DIR/Snippets/",
+                "Dir": __dirname + "/Snippets/",
                 "Snippets": {
                         "testsuite":"testsuite.txt",
                         "function":"function.txt"
@@ -73,7 +73,7 @@ requirejs([
         });
 
         var sTemplateType = "Snippet Type";
-        var sFileName = "~/PROJECT_DIR/Functions/tests/test_MethodUnderTest.js";
+        var sFileName = __dirname + "/Functions/tests/test_MethodUnderTest.js";
 
         xSnip.snip( sTemplateType ).then(function( Template ) {
                 file.create({
