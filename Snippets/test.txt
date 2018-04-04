@@ -1,0 +1,10 @@
+//test.js: Testing logic.
+
+define([], function() {
+	return {
+		"Name":"",
+		"Input": "",
+		"Function": "",
+		"ExpectedOutput": ""
+	};
+});
