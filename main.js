@@ -17,6 +17,9 @@ requirejs.config({
                 "../lib/testsuite.min": [ "TestSuite" ],
                 "../lib/promise.min": [ "promise" ]
 	},
+	suppress: {
+		nodeShim: true
+	},
 	shim: {
 		"underscore": {
 			deps: [
