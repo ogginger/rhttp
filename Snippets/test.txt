@@ -1,10 +1,14 @@
-//test.js: Testing logic.
+//test_name.js: Testing logic.
 
-define([], function() {
+define([
+	"method"
+], function(
+	method
+) {
 	return {
-		"Name":"",
+		"Name":"test_name",
 		"Input": "",
-		"Function": "",
+		"Function": method,
 		"ExpectedOutput": ""
 	};
 });
