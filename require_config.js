@@ -9,6 +9,7 @@ module.exports = {
 		"underscore": "../lib/underscore.min"
 	},
         bundles: {
+		"../lib/log.min": [ "log" ],
 		"../lib/snip.min": [ "Snip" ],
 		"../lib/file.min": [ "file" ],
                 "../lib/promise.min": [ "promise" ],
