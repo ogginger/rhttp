@@ -2,7 +2,7 @@
 
 module.exports = {
         nodeRequire: require,
-        baseUrl: "/*Project*/",
+        baseUrl: "Project",
         paths: {
 		"rsvp": "../lib/rsvp.min",
 		"backbone": "../lib/backbone.min",
