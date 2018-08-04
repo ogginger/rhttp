@@ -20,12 +20,13 @@ requirejs([
                 "Dir": __dirname + "/Snippets/",
                 "Snippets": {
                         "testsuite":"testsuite.txt",
-                        "function":"function.txt"
+                        "function":"function.txt",
+			"test":"test.txt"
                 }
         });
 
         var sTemplateType = "Snippet Type";
-        var sFileName = __dirname + "/Functions/tests/test_MethodUnderTest.js";
+        var sFileName = __dirname + "/Project/test_Project.js";
 
         xSnip.snip( sTemplateType ).then(function( Template ) {
                 file.create({
