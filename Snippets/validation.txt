@@ -1,0 +1,7 @@
+//validation.js: Validation rules for input.
+
+define([], function() {
+  return [
+
+  ];
+});
