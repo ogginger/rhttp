@@ -11,7 +11,7 @@ requirejs([
 	"Snip"
 ], function(
 	file,
-	Snip	
+	Snip
 ) {
 	console.log("Main initialized successfully!");
 
@@ -25,21 +25,10 @@ requirejs([
                 }
         });
 
-        var sTemplateType = "Snippet Type";
-        var sFileName = __dirname + "/Project/test_Project.js";
-
-        xSnip.snip( sTemplateType ).then(function( Template ) {
-                file.create({
-                        "Name": sFileName,
-                        "Body": Template
-                }).then(function() {
-                        console.log("Done.");
-                }).catch(function( Error ) {
-                        console.log( "File error: " + Error );
-                });
-        }).catch(function( Error ) {
-                console.log("Snip error: " + JSON.stringify( Error ));
-        });
-        //*/
-
+	xSnip.render({
+		"TemplateType": "",
+		"Options": {},
+		"FileName": __dirname + "/.js"
+	});
+	//*/
 });
