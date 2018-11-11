@@ -15,7 +15,7 @@ requirejs([
 ) {
 	console.log("Main initialized successfully!");
 
-	/*
+	//*
         var xSnip = new Snip({
                 "Dir": __dirname + "/Snippets/",
                 "Snippets": {
@@ -26,9 +26,11 @@ requirejs([
         });
 
 	xSnip.render({
-		"TemplateType": "",
-		"Options": {},
-		"FileName": __dirname + "/.js"
+		"TemplateType": "function",
+		"Options": {
+			"Name": "function"
+		},
+		"FileName": "../test.js"
 	});
 	//*/
 });
