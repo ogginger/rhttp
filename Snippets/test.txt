@@ -1,12 +1,12 @@
-//test_<%= Method %>.js: Testing logic.
+//<%= Name %>.js: Testing logic.
 
 define([
 	"<%= Method %>"
 ], function(
-	method
+	<%= Method %>
 ) {
 	return {
-		"Name":"test_<%= Method %>",
+		"Name":"<%= Name %>",
 		"Input": "",
 		"Function": <%= Method %>,
 		"ExpectedOutput": ""
