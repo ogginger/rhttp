@@ -26,11 +26,11 @@ requirejs([
         });
 
 	xSnip.render({
-		"TemplateType": "function",
+		"TemplateType": "testsuite",
 		"Options": {
-			"Name": "function"
+			"Method": "function_name"
 		},
-		"FileName": "../test.js"
+		"FileName": "Project/test_suite.js"
 	});
 	//*/
 });
