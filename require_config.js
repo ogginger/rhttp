@@ -2,11 +2,12 @@
 
 module.exports = {
         nodeRequire: require,
-        baseUrl: "Project",
+        baseUrl: "rhttp",
         paths: {
 		"rsvp": "../lib/rsvp.min",
 		"backbone": "../lib/backbone.min",
-		"underscore": "../lib/underscore.min"
+		"underscore": "../lib/underscore.min",
+		"http": "lib/http.min"
 	},
         bundles: {
 		"../lib/log.min": [ "log" ],

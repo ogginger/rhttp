@@ -1,0 +1,3 @@
+#!/bin/bash
+
+vim node_modules/requirejs/bin/r.js

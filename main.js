@@ -7,15 +7,23 @@ var config = require("./require_config");
 requirejs.config(config);
 
 requirejs([
-	"file",
-	"Snip"
+	//"file_",
+	//"Snip",
+	//"test_rhttp",
+	"rhttp!http://138.197.210.12/cdn/test"
 ], function(
-	file,
-	Snip
+	//file,
+	//Snip,
+	//test_rhttp,
+	test
 ) {
 	console.log("Main initialized successfully!");
+	
+	console.log( test );
 
-	//*
+	//new test_rhttp();
+	
+	/*
         var xSnip = new Snip({
                 "Dir": __dirname + "/Snippets/",
                 "Snippets": {
@@ -25,12 +33,15 @@ requirejs([
                 }
         });
 
+	var sTestName = "rhttp_url_ResolvesDefine";
+
 	xSnip.render({
-		"TemplateType": "testsuite",
+		"TemplateType": "test",
 		"Options": {
-			"Method": "function_name"
+			"Name": sTestName,
+			"Method": "rhttp"
 		},
-		"FileName": "Project/test_suite.js"
+		"FileName": "rhttp/" + sTestName + ".js"
 	});
 	//*/
 });
