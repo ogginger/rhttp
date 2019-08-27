@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/ogginger/node_main.js/issues"
   },
+  "dependencies": {
+    "fs": "0.0.2",
+    "request": "*",
+    "requirejs": "^2.3.6",
+    "vm": "*"
+  },
   "homepage": "https://github.com/ogginger/node_main.js#readme"
 }
