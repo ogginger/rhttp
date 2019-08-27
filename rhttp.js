@@ -1,7 +1,5 @@
 //rhttp.js: Functional Logic.
 
-//Parent Map
-
 define([
 	"vm",
 	"requirejs",
