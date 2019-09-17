@@ -19,7 +19,8 @@
     "fs": "0.0.2",
     "request": "*",
     "requirejs": "^2.3.6",
-    "vm": "*"
+    "vm": "*",
+    "jquery": "*"
   },
   "homepage": "https://github.com/ogginger/node_main.js#readme"
 }

@@ -15,7 +15,7 @@ requirejs([
 ) {
 	console.log("Main initialized successfully!");
 
-	//*
+	/*
         var xSnip = new Snip({
                 "Dir": __dirname + "/Snippets/",
                 "Snippets": {
