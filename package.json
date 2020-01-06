@@ -22,5 +22,10 @@
     "vm": "*",
     "jquery": "*"
   },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-run": "^0.8.1"
+  },
   "homepage": "https://github.com/ogginger/node_main.js#readme"
 }
