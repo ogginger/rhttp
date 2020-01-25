@@ -1,19 +1,20 @@
 //require_config.js: Requirejs configuration.
 
 module.exports = {
-        nodeRequire: require,
-        baseUrl: "Project",
-        paths: {
+	nodeRequire: require,
+	baseUrl: "Project",
+	paths: {
 		"rsvp": "../lib/rsvp.min",
 		"backbone": "../lib/backbone.min",
 		"underscore": "../lib/underscore.min"
 	},
-        bundles: {
+	bundles: {
 		"../lib/log.min": [ "log" ],
 		"../lib/snip.min": [ "Snip" ],
 		"../lib/file.min": [ "file" ],
-                "../lib/promise.min": [ "promise" ],
-		"../lib/testsuite.min": [ "TestSuite" ]
+        "../lib/promise.min": [ "promise" ],
+		"../lib/testsuite.min": [ "TestSuite" ],
+		"../lib/code.min": [ "code" ]
 	},
 	suppress: {
 		nodeShim: true
@@ -46,11 +47,11 @@ module.exports = {
 			exports: "Snip"
 		},
 		"promise": {
-                        deps: [
-                                "rsvp"
-                        ],
-                        exports: "promise"
-                },
+			deps: [
+					"rsvp"
+			],
+			exports: "promise"
+		},
 		"TestSuite": {
 			deps: [
 				"backbone",
