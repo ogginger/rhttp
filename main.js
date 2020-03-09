@@ -7,30 +7,11 @@ var config = require("./require_config");
 requirejs.config(config);
 
 requirejs([
-	"file",
-	"Snip"
+	"code"
 ], function(
-	file,
-	Snip
+	code
 ) {
 	console.log("Main initialized successfully!");
 
-	/*
-        var xSnip = new Snip({
-                "Dir": __dirname + "/Snippets/",
-                "Snippets": {
-                        "testsuite":"testsuite.txt",
-                        "function":"function.txt",
-			"test":"test.txt"
-                }
-        });
-
-	xSnip.render({
-		"TemplateType": "testsuite",
-		"Options": {
-			"Method": "function_name"
-		},
-		"FileName": "Project/test_suite.js"
-	});
-	//*/
+	code( __dirname );
 });
