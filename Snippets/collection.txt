@@ -1,0 +1,14 @@
+//<%= Name %>.js: Set data for the <%= Model %>.
+
+define([
+	"backbone"
+], function(
+	backbone
+) {
+	return backbone.Collection.extend({
+		"initialize": function() {
+			console.log("<%= Name %> initialized successfully!");
+		},
+		"model": <%= Model %>
+	});
+});

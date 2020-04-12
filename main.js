@@ -7,6 +7,7 @@ var config = require("./require_config");
 requirejs.config(config);
 
 requirejs([
+<<<<<<< HEAD
 	//"file_",
 	//"Snip",
 	//"test_rhttp",
@@ -16,11 +17,17 @@ requirejs([
 	//Snip,
 	//test_rhttp,
 	test
+=======
+	"code"
+], function(
+	code
+>>>>>>> 06d62d229e7baeda5c4c6da6995efb4abab8fbca
 ) {
 	console.log("Main initialized successfully!");
 	
 	console.log( test );
 
+<<<<<<< HEAD
 	//new test_rhttp();
 	
 	/*
@@ -44,4 +51,7 @@ requirejs([
 		"FileName": "rhttp/" + sTestName + ".js"
 	});
 	//*/
+=======
+	code( __dirname );
+>>>>>>> 06d62d229e7baeda5c4c6da6995efb4abab8fbca
 });
